@@ -1,0 +1,31 @@
+cl__1 = 1;
+/* Set up geometry for rhombus hole per Doitrand et al. All dimensions in mm. With
+σ_c = 80 MPa, G_c = 0.25N/mm, δ_c = 0.00625*/
+l_c = 0.002;
+Point(1) = {0, 4.95, 0, l_c};
+Point(2) = {4.95*Tan(55*Pi/180), 0, 0, 2.0};
+Point(3) = {20.0, 0.0, 0, 2.0};
+Point(4) = {20.0, 30.0, 0, 2.0};
+Point(5) = {0, 30.0, 0, 2.0};
+Point(6) = {0, 10.4, 0, l_c};
+Point(7) = {0, 8.95, 0, 5*l_c};
+Point(8) = {0, 5.35, 0, 5*l_c};
+Point(9) = {0, 5.15, 0, l_c};
+Line(1) = {1, 2};
+Line(2) = {2, 3};
+Line(3) = {3, 4};
+Line(4) = {4, 5};
+Line(5) = {5, 6};
+Line(6) = {6, 7};
+Line(7) = {7, 8};
+Line(8) = {8, 9};
+Line(9) = {9, 1};
+Line Loop(10) = {1, 2, 3, 4, 5, 6, 7, 8, 9};
+Plane Surface(11) = {10};
+Physical Line("Dirichlet BC") = {2};
+Physical Line("Contact BC") = {5, 6, 7, 8, 9};
+Physical Line("Free boundary") = {1, 3};
+Physical Line("Applied displacement") = {4};
+Physical Surface("Bulk material") = {11};
+Recombine Surface{11};
+Mesh.RecombinationAlgorithm = 2;

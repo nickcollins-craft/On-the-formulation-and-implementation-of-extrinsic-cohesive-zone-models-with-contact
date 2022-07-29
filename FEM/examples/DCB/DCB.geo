@@ -1,0 +1,20 @@
+cl__1 = 1;
+/* Set up geometry for DCB inspired by Camacho & Ortiz. All dimensions in mm.*/
+l_c = 0.002;
+Point(1) = {0, 0, 0, l_c};
+Point(2) = {1.6, 0, 0, l_c};
+Point(3) = {2.0, 0.0, 0, 0.1};
+Point(4) = {2.0, 0.2, 0, 0.1};
+Point(5) = {0, 0.2, 0, 0.1};
+Line(1) = {1, 2};
+Line(2) = {2, 3};
+Line(3) = {3, 4};
+Line(4) = {4, 5};
+Line(5) = {5, 1};
+Line Loop(6) = {1, 2, 3, 4, 5};
+Plane Surface(7) = {6};
+Physical Line("Dirichlet BC") = {5};
+Physical Line("Contact BC") = {1};
+Physical Line("Free boundary") = {2, 3, 4};
+Physical Surface("Bulk material") = {7};
+Physical Point("Applied force") = {4};
