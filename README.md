@@ -1,5 +1,5 @@
 # On-the-formulation-and-implementation-of-extrinsic-cohesive-zone-models-with-contact
-This repository stores the codes associated with the paper "On the formulation and implementation of extrinsic cohesive zone models with contact"
+This repository stores the codes associated with the paper "On the formulation and implementation of extrinsic cohesive zone models with contact", by N.A. Collins-Craft, F. Bourrier and V. Acary
 The codes are also available on Zenodo: https://doi.org/10.5281/zenodo.6939392
 
 In order to run the codes, the user first requires a working installation of Python 3 (the codes were run on Python 3.8.13). We strongly recommend using Anaconda to manage the installation: https://www.anaconda.com/products/distribution
@@ -12,3 +12,5 @@ Then, those codes that call the Siconos software can be run by typing "siconos <
 Users of this software should also cite each software listed above where appropriate.
 
 Two of the codes ("DCB_mesh_and_end_plot.py" and "Rhombus_mesh_and_end_plot.py") also require images that are included in the related repository containing the output data: https://doi.org/10.5281/zenodo.6939154
+
+Contact: nicholas[dot]collins-craft[at]inria[dot]fr

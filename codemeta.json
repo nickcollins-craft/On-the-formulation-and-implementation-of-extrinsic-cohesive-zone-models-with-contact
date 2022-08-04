@@ -1,0 +1,73 @@
+{
+    "@context": "https://doi.org/10.5063/schema/codemeta-2.0",
+    "@type": "SoftwareSourceCode",
+    "license": "https://spdx.org/licenses/Apache-2.0",
+    "codeRepository": "git+https://github.com/nickcollins-craft/On-the-formulation-and-implementation-of-extrinsic-cohesive-zone-models-with-contact.git",
+    "datePublished": "2022-07-22",
+    "dateModified": "2022-08-04",
+    "downloadUrl": "https://zenodo.org/record/6939392#.YuucamFBw5k",
+    "name": "On the formulation and implementation of extrinsic cohesive zone models with contact",
+    "version": "1.0.1",
+    "identifier": "10.5281/zenodo.6939391",
+    "description": "This software contains the codes associated with the paper \"On the formulation and implementation of extrinsic cohesive zone models with contact\", by N.A. Collins-Craft, F. Bourrier and V. Acary",
+    "applicationCategory": "Mechanics",
+    "releaseNotes": "Change log: Files added to make the repository conform with the standards of Software Heritage",
+    "funding": "Project SMART-PROTECT",
+    "developmentStatus": "inactive",
+    "funder": {
+        "@type": "Organization",
+        "name": "Region Auvergne-Rhône-Alpes"
+    },
+    "keywords": [
+        "Extrinsic cohesive zone",
+        "Finite element analysis",
+        "Dynamic crack propagation",
+        "Non-smooth mechanics"
+    ],
+    "programmingLanguage": [
+        "Python 3"
+    ],
+    "operatingSystem": [
+        "Linux"
+    ],
+    "softwareRequirements": [
+        "Gmsh: https://gmsh.info/",
+        "Meshio: https://github.com/nschloe/meshio",
+        "Siconos: https://nonsmooth.gricad-pages.univ-grenoble-alpes.fr/siconos/"
+    ],
+    "author": [
+        {
+            "@type": "Person",
+            "@id": "https://orcid.org/0000-0003-2510-137X",
+            "givenName": "Nicholas Anton",
+            "familyName": "Collins-Craft",
+            "email": "nicholas.collins-craft@inria.fr",
+            "affiliation": {
+                "@type": "Organization",
+                "name": "Univ. Grenoble Alpes, Inria, CNRS, Grenoble INP, Institute of Engineering, LJK, 38000, Grenoble, France"
+            }
+        },
+        {
+            "@type": "Person",
+            "@id": "https://orcid.org/0000-0001-7012-818X",
+            "givenName": "Franck",
+            "familyName": "Bourrier",
+            "email": "franck.bourrier@inrae.fr",
+            "affiliation": {
+                "@type": "Organization",
+                "name": "Univ. Grenoble Alpes, Inria, CNRS, Grenoble INP, Institute of Engineering, LJK, 38000, Grenoble, France and Univ. Grenoble Alpes, INRAE, ETNA, 38000, Grenoble, France"
+            }
+        },
+        {
+            "@type": "Person",
+            "@id": "https://orcid.org/0000-0002-9782-4051",
+            "givenName": "Vincent",
+            "familyName": "Acary",
+            "email": "vincent.acary@inria.fr",
+            "affiliation": {
+                "@type": "Organization",
+                "name": "Univ. Grenoble Alpes, Inria, CNRS, Grenoble INP, Institute of Engineering, LJK, 38000, Grenoble, France"
+            }
+        }
+    ]
+}
