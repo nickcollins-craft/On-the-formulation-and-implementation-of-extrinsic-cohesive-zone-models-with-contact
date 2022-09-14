@@ -69,5 +69,8 @@
                 "name": "Univ. Grenoble Alpes, Inria, CNRS, Grenoble INP, Institute of Engineering, LJK, 38000, Grenoble, France"
             }
         }
+    ],
+    "referencePublication": [
+        "https://doi.org/10.1016/j.cma.2022.115545"
     ]
 }
